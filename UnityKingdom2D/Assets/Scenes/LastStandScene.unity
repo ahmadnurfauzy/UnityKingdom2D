@@ -71208,6 +71208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1138264068}
   - component: {fileID: 1138264067}
+  - component: {fileID: 1138264069}
   m_Layer: 0
   m_Name: Stage
   m_TagString: Untagged
@@ -71266,6 +71267,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1138264069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138264066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e0488ae15cff34fa8598fc6816f663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1143775464
 GameObject:
   m_ObjectHideFlags: 0
@@ -74783,8 +74796,8 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!95 &1729320040
 Animator:
@@ -74819,7 +74832,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   State: 0
   IsAlive: 1
+  HealthPoint: 200
+  MagicPoint: 0
+  StaminaPoint: 0
   MoveSpeed: 5
+  AtkSpeed: 0.5
 --- !u!1 &1754213668
 GameObject:
   m_ObjectHideFlags: 0

@@ -258,8 +258,8 @@ MonoBehaviour:
   IsAlive: 0
   IsFoward: 1
   HealthPoint: 200
-  MoveSpeed: 1.5
-  AtkSpeed: 1
+  MoveSpeed: 2
+  AtkSpeed: 15
 --- !u!1 &6466373697947436850
 GameObject:
   m_ObjectHideFlags: 0
