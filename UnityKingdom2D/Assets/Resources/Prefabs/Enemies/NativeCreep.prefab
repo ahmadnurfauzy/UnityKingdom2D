@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6627000982130214196}
   m_Layer: 0
   m_Name: NativeCreep
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -371,6 +371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackPoint: 15
+  HitArea: 0
 --- !u!1 &6627000982597174397
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackPoint: 15
+  HitArea: 0
 --- !u!1 &6627000982835156902
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackPoint: 15
+  HitArea: 0
 --- !u!1 &6627000983461656544
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,3 +587,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackPoint: 15
+  HitArea: 0
