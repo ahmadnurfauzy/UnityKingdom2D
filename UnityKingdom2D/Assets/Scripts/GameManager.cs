@@ -12,9 +12,50 @@ public class GameManager : MonoBehaviour
     public GameObject Origin_Fire2 => Resources.Load<GameObject>("Prefabs/Stuffs/Fire_Style2");
     public GameObject Origin_Shell => Resources.Load<GameObject>("Prefabs/Stuffs/ShellEffect");
     public GameObject Origin_Damage => Resources.Load<GameObject>("Prefabs/Stuffs/DamagePop");
+    public GameObject Origin_Elixir => Resources.Load<GameObject>("Prefabs/PowerUps/Item_Elixir");
+    public GameObject Origin_Scroll => Resources.Load<GameObject>("Prefabs/PowerUps/Item_Scroll");
+    public GameObject Origin_Green => Resources.Load<GameObject>("Prefabs/PowerUps/Power_Green");
+    public GameObject Origin_Blue => Resources.Load<GameObject>("Prefabs/PowerUps/Power_Blue");
+    public GameObject Origin_Red => Resources.Load<GameObject>("Prefabs/PowerUps/Power_Red");
 
+    public LevelSet LevelPoint;
     public int GamePoint;
     public int KillPoint;
+
+    public int Item_Elixir
+    {
+        get
+        {
+            return itemElixir;
+        }
+        set
+        {
+            itemElixir = value;
+            if (itemElixir > 99)
+            {
+                itemElixir = 99;
+            }
+        }
+    }
+    
+    public int Item_Scroll
+    {
+        get
+        {
+            return itemScroll;
+        }
+        set
+        {
+            itemScroll = value;
+            if (itemScroll > 99)
+            {
+                itemScroll = 99;
+            }
+        }
+    }
+
+    [SerializeField] private int itemElixir;
+    [SerializeField] private int itemScroll;
 
     public static GameManager Instance { get; private set; }
 
@@ -44,4 +85,15 @@ public enum DamageState
     Default, 
     PlayerPhs, PlayerMag, 
     EnemyPhs, AllyHeal,
+}
+
+public enum ItemSet
+{
+    Default, Power_Green, Power_Red, Power_Blue,
+    Item_Elixir, Item_Scroll,
+}
+
+public enum LevelSet
+{
+    Default, Easy, Normal, Hard,
 }
